@@ -1,4 +1,4 @@
-<html ng-app="testapp">
+<html >
 	<head>
 		<title>Test Phone Gap App</title>
 		<script src="http://debug.phonegap.com/target/target-script-min.js#surf"></script>
@@ -27,6 +27,9 @@
 	        }]);
 			console.log('everything has run');
 			alert('run');
+			document.addEventListener('deviceready', function() {
+    			angular.bootstrap(document, ['testapp']);
+			}, false);
 		</script>
 		
 		
