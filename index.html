@@ -1,14 +1,7 @@
 <html ng-app="testapp">
 	<head>
 		<title>Test Phone Gap App</title>
-		<script src="http://debug.phonegap.com/target/target-script-min.js#anonymous"></script>
-	</head>
-	<body>
-		<h1>Test phone gap app</h1>
-		<div ng-controller="mainController">
-			<input type="text" ng-model="search">
-			<div ng-repeat="item in items | filter: search">{{ item.id }} <br> {{ item.name }}</div>
-		</div>
+		<script src="http://debug.phonegap.com/target/target-script-min.js#surf"></script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/angular.min.js"></script>
 		<script src="js/angular-route.min.js"></script>
@@ -34,5 +27,15 @@
 	        }]);
 			
 		</script>
+		
+		
+	</head>
+	<body>
+		<h1>Test phone gap app</h1>
+		<div ng-controller="mainController">
+			<input type="text" ng-model="search">
+			<div ng-repeat="item in items | filter: search">{{ item.id }} <br> {{ item.name }}</div>
+		</div>
+	
 	</body>
 </html>
