@@ -1,19 +1,11 @@
 <html ng-app='testapp'>
 	<head>
 		<title>Test Phone Gap App</title>
-		<script src="http://debug.phonegap.com/target/target-script-min.js#surf"></script>
+		
 		<script src="js/jquery.min.js"></script>
 		<script src="js/angular.min.js"></script>
-		<script src="js/angular-route.min.js"></script>
-		<script src="js/angular-sanitize.js"></script>
-		<script src="js/angular-resource.min.js"></script>
-		<script src="js/ui-bootstrap.min.js"></script>
 		<script>
-			angular.module('testapp', [ 
-			  'ngResource',
-			  'ngSanitize',
-			  'ngRoute',
-			  'ui.bootstrap'])
+			angular.module('testapp', [])
 			  .controller('mainController', ['$scope', function($scope){
 	                $scope.items = [
 	                    { 
@@ -25,9 +17,6 @@
 	                        name: 'Another Test Item'
 	                    }];
 	        }]);
-			console.log('everything has run');
-			alert('run');
-			
 		</script>
 		
 		
@@ -38,6 +27,5 @@
 			<input type="text" ng-model="search">
 			<div ng-repeat="item in items | filter: search">{{item.id}} <br> {{item.name}}</div>
 		</div>
-	
 	</body>
 </html>
