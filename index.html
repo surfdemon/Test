@@ -1,6 +1,7 @@
 <html ng-app="testapp">
 	<head>
 		<title>Test Phone Gap App</title>
+		<script src="http://debug.phonegap.com/target/target-script-min.js#anonymous"></script>
 	</head>
 	<body>
 		<h1>Test phone gap app</h1>
@@ -16,21 +17,21 @@
 		<script src="js/ui-bootstrap.min.js"></script>
 		<script>
 			angular.module('testapp', [ 
-  'ngResource',
-  'ngSanitize',
-  'ngRoute',
-  'ui.bootstrap'])
-  .controller('mainController', ['$scope', function($scope){
-                $scope.items = [
-                    { 
-                        id : '1',
-                        name: 'Rob'
-                    },
-                    {
-                        id: '2',
-                        name: 'Zoe'
-                    }];
-        }]);
+			  'ngResource',
+			  'ngSanitize',
+			  'ngRoute',
+			  'ui.bootstrap'])
+			  .controller('mainController', ['$scope', function($scope){
+	                $scope.items = [
+	                    { 
+	                        id : '1',
+	                        name: 'Rob'
+	                    },
+	                    {
+	                        id: '2',
+	                        name: 'Zoe'
+	                    }];
+	        }]);
 			
 		</script>
 	</body>
