@@ -14,6 +14,24 @@
 		<script src="js/angular-sanitize.js"></script>
 		<script src="js/angular-resource.min.js"></script>
 		<script src="js/ui-bootstrap.min.js"></script>
-		<script src="js/main.js"></script>
+		<script>
+			angular.module('testapp', [ 
+  'ngResource',
+  'ngSanitize',
+  'ngRoute',
+  'ui.bootstrap'])
+  .controller('mainController', ['$scope', function($scope){
+                $scope.items = [
+                    { 
+                        id : '1',
+                        name: 'Rob'
+                    },
+                    {
+                        id: '2',
+                        name: 'Zoe'
+                    }];
+        }]);
+			
+		</script>
 	</body>
 </html>
