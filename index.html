@@ -1,4 +1,4 @@
-<html >
+<html ng-app='testapp'>
 	<head>
 		<title>Test Phone Gap App</title>
 		<script src="http://debug.phonegap.com/target/target-script-min.js#surf"></script>
@@ -18,18 +18,16 @@
 	                $scope.items = [
 	                    { 
 	                        id : '1',
-	                        name: 'Rob'
+	                        name: 'Test Item'
 	                    },
 	                    {
 	                        id: '2',
-	                        name: 'Zoe'
+	                        name: 'Another Test Item'
 	                    }];
 	        }]);
 			console.log('everything has run');
 			alert('run');
-			document.addEventListener('deviceready', function() {
-    			angular.bootstrap(document, ['testapp']);
-			}, false);
+			
 		</script>
 		
 		
